@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="css/style.css">
+	<title>Responsive Layout</title>
+    <style>
+        *{
+      box-sizing: border-box;
+    }
+    
+    h1{
+      text-align: center;
+    }
+    
+    p {
+        background-color:rgb(255, 205, 205);
+        border: 2px solid black;
+      height: 300px;
+      margin-right: 10px;
+      padding: 40px 40px 40px 40px;
+      overflow:auto;
+    }
+    
+    
+    #container {
+      position: relative;
+      
+    }
+    
+    #p1 {
+      background-color: #9998d5;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-weight: bold;
+      height: 35px;
+      width: 120px;
+      padding: 10px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    #p2 {
+      background-color:#c14378 ;
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-weight: bold;
+      height: 35px;
+      width: 120px;
+      padding: 10px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    #p3 {
+     background-color: #c1e598;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-weight: bold;
+      height: 35px;
+      width: 120px;
+      padding: 10px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    
+    .row {
+      width: 100%;
+    
+    }
+    
+    
+    /********** Large devices only **********/
+    @media (min-width: 992px) {
+      .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        float: left;
+      }
+      .col-lg-1 {
+        width: 8.33%;
+      }
+      .col-lg-2 {
+        width: 16.66%;
+      }
+      .col-lg-3 {
+        width: 25%;
+      }
+      .col-lg-4 {
+        width: 33.33%;
+      
+      }
+      .col-lg-5 {
+        width: 41.66%;
+      }
+      .col-lg-6 {
+        width: 50%;
+      }
+      .col-lg-7 {
+        width: 58.33%;
+      }
+      .col-lg-8 {
+        width: 66.66%;
+      }
+      .col-lg-9 {
+        width: 74.99%;
+      }
+      .col-lg-10 {
+        width: 83.33%;
+      }
+      .col-lg-11 {
+        width: 91.66%;
+      }
+      .col-lg-12 {
+        width: 100%;
+      }
+    
+      
+    }
+    
+    /********** Medium devices only **********/
+    @media (min-width: 768px) and (max-width: 991px) {
+      .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+       
+      }
+      .col-md-1 {
+        width: 8.33%;
+      }
+      .col-md-2 {
+        width: 16.66%;
+      }
+      .col-md-3 {
+        width: 25%;
+      }
+      .col-md-4 {
+        width: 33.33%;
+      }
+      .col-md-5 {
+        width: 41.66%;
+      }
+      .col-md-6 {
+        width: 50%;
+      }
+      .col-md-7 {
+        width: 58.33%;
+      }
+      .col-md-8 {
+        width: 66.66%;
+      }
+      .col-md-9 {
+        width: 74.99%;
+      }
+      .col-md-10 {
+        width: 83.33%;
+      }
+      .col-md-11 {
+        width: 91.66%;
+      }
+      .col-md-12 {
+        width: 100%;
+      }
+    }
+    
+    /********** Mobile only **********/
+    @media (max-width: 767px) {
+      .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        float: left;
+      }
+      .col-sm-1 {
+        width: 8.33%;
+      }
+      .col-sm-2 {
+        width: 16.66%;
+      }
+      .col-sm-3 {
+        width: 25%;
+      }
+      .col-sm-4 {
+        width: 33.33%;
+      
+      }
+      .col-sm-5 {
+        width: 41.66%;
+      }
+      .col-sm-6 {
+        width: 50%;
+      }
+      .col-sm-7 {
+        width: 58.33%;
+      }
+      .col-sm-8 {
+        width: 66.66%;
+      }
+      .col-sm-9 {
+        width: 74.99%;
+      }
+      .col-sm-10 {
+        width: 83.33%;
+      }
+      .col-sm-11 {
+        width: 91.66%;
+      }
+      .col-sm-12 {
+        width: 100%;
+      }
+    
+      
+    }
+    </style>
+
+</head>
+<body>
+	<div class="row">
+	<h1>Western Political Thinkers</h1>
+  <div class="col-lg-4 col-md-6 col-sm-12" id="container">
+    <p>Plato (429?–347 B.C.E.) is, by any reckoning, one of the most dazzling writers in the Western literary tradition and one of the most penetrating, wide-ranging, and influential authors in the history of philosophy. An Athenian citizen of high status, he displays in his works his absorption in the political events and intellectual movements of his time, but the questions he raises are so profound and the strategies he uses for tackling them so richly suggestive and provocative that educated readers of nearly every period have in some way been influenced by him, and in practically every age there have been philosophers who count themselves Platonists in some important respects. He was not the first thinker or writer to whom the word “philosopher” should be applied.
+        <p id="p1">Plato</p>
+
+  	</div>
+
+  
+
+  <div class="col-lg-4 col-md-6 col-sm-12" id="container">
+      <p>Born in 384 B.C.E. in the Macedonian region of northeastern Greece in the small city of Stagira (whence the moniker ‘the Stagirite’, which one still occasionally encounters in Aristotelian scholarship), Aristotle was sent to Athens at about the age of seventeen to study in Plato’s Academy, then a pre-eminent place of learning in the Greek world. Once in Athens, Aristotle remained associated with the Academy until Plato’s death in 347, at which time he left for Assos, in Asia Minor, on the northwest coast of present-day Turkey. There he continued the philosophical activity he had begun in the Academy, but in all likelihood also began to expand his researches into marine biology. He remained at Assos for approximately three years, when, evidently upon the death of his host Hermeias, a friend and former Academic who had been the ruler of Assos, Aristotle moved to the nearby coastal island of Lesbos.
+  	<p id="p2">Aristotle</p>
+ </div>
+
+<div class="col-lg-4 col-md-12 col-sm-12" id="container">
+    <p>Jean-Jacques Rousseau was born in the independent Calvinist city-state of Geneva in 1712, the son of Isaac Rousseau, a watchmaker, and Suzanne Bernard. Rousseau’s mother died nine days after his birth, with the consequence that Rousseau was raised and educated by his father until the age of ten. Isaac Rousseau was one of the small minority of Geneva’s residents who enjoyed the rank of citizen of Geneva, a status which Jean-Jacques was to inherit. According to Rousseau’s own subsequent accounts, the haphazard education that he received from his father included both the inculcation of republican patriotism and the reading of classical authors such as Plutarch who dealt with the Roman republic. On his father’s exile from the city to avoid arrest, Jean-Jacques was put in the care of a pastor at nearby Bossey and subsequently apprenticed to an engraver.    
+       <p  id="p3">Rousseau</p>
+
+</div>
+
+  </div>	
+
+</body>
+</html>
